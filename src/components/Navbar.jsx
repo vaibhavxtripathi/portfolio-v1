@@ -1,21 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="border-[1px] border-gray-500 w-max mx-auto mt-5 p-3 px-5 rounded-full backdrop-filter backdrop-blur-xl sticky top-0">
+    <div className="z-10 border-[1px] border-gray-500 w-max mx-auto mt-5 p-3 px-5 rounded-full backdrop-filter backdrop-blur-xl sticky top-5 xs:sticky xs:top-5">
       <ul className="flex gap-7 font-medium">
         <li>
-          <Link to="/">Home</Link>
+          <a href="#hero">Home</a>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>

@@ -1,0 +1,153 @@
+/* LOADING SCREEN */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-text {
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  animation: pulse 1.5s infinite;
+  text-align: center;
+}
+
+/* CUTTING LINE */
+.cut-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  z-index: 1001;
+}
+
+/* STRIP FALLING EFFECT */
+.curtain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.curtain-strip {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: black;
+  transform-origin: top;
+}
+
+/* Dynamic Strip Widths */
+@media (min-width: 769px) {
+  /* Desktop: More strips */
+  .curtain-strip {
+    width: 8.33%;
+  }
+}
+
+@media (min-width: 300px) {
+  /* Mobile: Fewer, wider strips */
+  .curtain-strip {
+    width: 60%;
+  }
+}
+
+/* Positioning the strips */
+.curtain-strip:nth-child(1) {
+  left: 0%;
+}
+.curtain-strip:nth-child(2) {
+  left: 8.33%;
+}
+.curtain-strip:nth-child(3) {
+  left: 16.66%;
+}
+.curtain-strip:nth-child(4) {
+  left: 25%;
+}
+.curtain-strip:nth-child(5) {
+  left: 33.33%;
+}
+.curtain-strip:nth-child(6) {
+  left: 41.66%;
+}
+.curtain-strip:nth-child(7) {
+  left: 50%;
+}
+.curtain-strip:nth-child(8) {
+  left: 58.33%;
+}
+.curtain-strip:nth-child(9) {
+  left: 66.66%;
+}
+.curtain-strip:nth-child(10) {
+  left: 75%;
+}
+.curtain-strip:nth-child(11) {
+  left: 83.33%;
+}
+.curtain-strip:nth-child(12) {
+  left: 91.66%;
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-text {
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.loading-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #FEFBF5;
+  transform-origin: left;
+}
+
+.curtain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.curtain-strip {
+  flex: none;
+  height: 100%;
+  background-color: black;
+  transform-origin: top;
+}

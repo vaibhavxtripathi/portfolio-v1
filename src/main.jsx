@@ -1,13 +1,30 @@
-import { StrictMode } from "react";
+import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
-import { BrowserRouter } from "react-router";
+import App from "./App";
+import Loading from "./components/Loading";
+import { motion } from "framer-motion";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>
-);
+const RootComponent = () => {
+  const [isLoadingComplete, setIsLoadingComplete] = useState(false);
+
+  return (
+    <>
+      {!isLoadingComplete && (
+        <Loading onLoadingComplete={() => setIsLoadingComplete(true)} />
+      )}
+
+      {isLoadingComplete && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, ease: "anticipate" }}
+        >
+          <App />
+        </motion.div>
+      )}
+    </>
+  );
+};
+
+const root = createRoot(document.getElementById("root"));
+root.render(<RootComponent />);
