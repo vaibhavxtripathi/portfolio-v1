@@ -3,7 +3,7 @@ import Projects from "./helper/Projects";
 import MagneticHover from "./ui/useMagneticHover";
 import weatherapp from "/assets/weather-app.png";
 import savoney from "/assets/savoney.png";
-import pw from "/assets/pw.png"
+import pw from "/assets/pw.png";
 
 const ProjectSection = () => {
   return (
