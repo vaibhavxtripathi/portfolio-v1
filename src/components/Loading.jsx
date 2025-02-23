@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../styles/Loading.css";
+import CountUp from "./ui/count100";
 
 const Loading = ({ onLoadingComplete }) => {
   const [loading, setLoading] = useState(true);
@@ -26,9 +27,16 @@ const Loading = ({ onLoadingComplete }) => {
           className="loading-screen"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 2}}
         >
-          <div className="loading-text">Loading...</div>
+            <CountUp
+              from={0}
+              to={104}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text"
+            />
           {showLine && (
             <motion.div
               className="loading-line"
@@ -47,7 +55,7 @@ const Loading = ({ onLoadingComplete }) => {
 
 const CurtainDrop = ({ onComplete }) => {
   const stripCount =
-    window.innerWidth < 600 ? 4 : window.innerWidth < 1024 ? 6 : 12;
+    window.innerWidth < 600 ? 34 : window.innerWidth < 1024 ? 6 : 12;
   const strips = Array.from({ length: stripCount });
 
   useEffect(() => {
@@ -65,7 +73,7 @@ const CurtainDrop = ({ onComplete }) => {
           initial={{ y: 0, opacity: 1 }}
           animate={{ y: 1000, opacity: 1 }}
           transition={{
-            duration: 0.6,
+            duration: 0.5,
             delay: i * 0.08,
             ease: "easeInOut",
           }}

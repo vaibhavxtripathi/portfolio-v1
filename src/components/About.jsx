@@ -4,7 +4,10 @@ import { PiShootingStar } from "react-icons/pi";
 
 const About = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto mt-48 px-5 md:px-10 lg:px-16 relative">
+    <div
+      data-cursor="about"
+      className="w-full max-w-6xl mx-auto mt-72 px-5 md:px-10 lg:px-16 relative"
+    >
       {/* Title (Absolute Positioning) */}
       <h1
         id="about"
@@ -18,7 +21,7 @@ const About = () => {
         {/* Text Section (Now Below Image on Small Screens) */}
         <div className="flex-1 p-6 text-black">
           <h1 className="text-xl">Hi</h1>
-          <h1 className="text-2xl font-semibold">I am VXTR.</h1>
+          <h1 className="text-2xl font-semibold">I AM VXTR.</h1>
           <p className="text-lg text-gray-700 mt-3">
             I like building{" "}
             <span className="text-black font-medium bg-[#C7B5C0] p-1 rounded-md">
@@ -41,15 +44,22 @@ const About = () => {
             Looking for a Frontend/Full Stack Developer?
           </h1>
           <div className="mt-3 xs:mt-5 xs:flex xs:justify-center lg:block">
-            <Button>
-              Hire Me <PiShootingStar />
-            </Button>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=vaibhavxtripathi@gmail.com&su=Let's Connect&body=Hi, I wanted to reach out regarding..."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>
+                Hire Me <PiShootingStar />
+              </Button>
+            </a>
           </div>
         </div>
 
         {/* Image Section (Moves to Top on Mobile) */}
         <div className="flex justify-center items-center p-4">
           <img
+            id="aboutImg"
             src="https://avatars.githubusercontent.com/u/144479603?s=400&u=90f5b200e86857e9112c50c6786ba7a37c620429&v=4"
             className="w-48 h-48 xs:w-56 xs:h-56  sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover shadow-lg"
           />

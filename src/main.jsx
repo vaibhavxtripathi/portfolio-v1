@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import Loading from "./components/Loading";
 import { motion } from "framer-motion";
+import CursorFollower from "./components/ui/Cursor";
 
 const RootComponent = () => {
   const [isLoadingComplete, setIsLoadingComplete] = useState(false);
@@ -19,7 +20,8 @@ const RootComponent = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "anticipate" }}
         >
-          <App />
+          <CursorFollower/>
+            <App />
         </motion.div>
       )}
     </>

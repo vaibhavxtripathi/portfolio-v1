@@ -7,18 +7,15 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import TechStacks from "./components/TechStacks";
 
-
-
 function App() {
-
   return (
     <>
-      <Navbar />
-      <Hero />
-      <ProjectSection />
-      <TechStacks/>
-      <About/>
-      <Contact/>
+        <Navbar />
+        <Hero />
+        <ProjectSection />
+        <TechStacks />
+        <About />
+        <Contact />
     </>
   );
 }
