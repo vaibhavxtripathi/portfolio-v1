@@ -4,13 +4,13 @@ import { SlGlobe } from "react-icons/sl";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 
-const Projects = ({ img, name, desc,href1, href2 }) => {
+const Projects = ({ img, name, desc, href1, href2 }) => {
   return (
     <div className="text-center p-6 mt-10">
       {/* Image */}
       <div className="flex justify-center">
         <motion.img
-          src={`src/assets/${img}.png`}
+          src={`${img}`}
           className="w-40 sm:w-56 md:w-64 lg:w-72 h-auto object-contain rounded-lg"
           whileHover={{
             scale: 1.1,
@@ -30,9 +30,9 @@ const Projects = ({ img, name, desc,href1, href2 }) => {
           {desc}
         </h1>
 
-        <div className="flex gap-5 justify-center p-4 mt-3">
+        <div className="flex lg:gap-5 xs:gap-4 justify-center p-4 mt-3">
           <h1
-            className={`p-3 border-[1.8px] rounded ${
+            className={`xs:p-2 xs:text-sm lg:p-3 border-[1.8px] rounded ${
               name === "Picker Wheel" ? "border-gray-900" : "border-gray-300"
             }
         text-semibold ${
@@ -44,7 +44,7 @@ const Projects = ({ img, name, desc,href1, href2 }) => {
           </h1>
 
           <h1
-            className={`p-3 border-[1.8px] rounded ${
+            className={`xs:p-2 xs:text-sm lg:p-3 border-[1.8px] rounded ${
               name === "Picker Wheel" ? "border-gray-900" : "border-gray-300"
             }
         text-semibold ${
@@ -56,7 +56,7 @@ const Projects = ({ img, name, desc,href1, href2 }) => {
           </h1>
 
           <h1
-            className={`p-3 border-[1.8px] rounded ${
+            className={`xs:p-2 xs:text-sm lg:p-3 border-[1.8px] rounded ${
               name === "Picker Wheel" ? "border-gray-900" : "border-gray-300"
             }
         text-semibold ${
@@ -68,7 +68,7 @@ const Projects = ({ img, name, desc,href1, href2 }) => {
           </h1>
 
           <h1
-            className={`p-3 border-[1.8px] rounded ${
+            className={`xs:p-2 xs:text-sm lg:p-3 border-[1.8px] rounded ${
               name === "Picker Wheel" ? "border-gray-900" : "border-gray-300"
             }
         text-semibold ${

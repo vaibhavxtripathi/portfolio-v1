@@ -1,14 +1,14 @@
 import React from "react";
 import Projects from "./helper/Projects";
 import MagneticHover from "./ui/useMagneticHover";
-import pickerwheel from "../assets/picker-wheel.png";
-import weatherapp from "../assets/weather-app.png";
-import savoney from "../assets/savoney.png";
+import weatherapp from "/assets/weather-app.png";
+import savoney from "/assets/savoney.png";
+import pw from "/assets/pw.png"
 
 const ProjectSection = () => {
   return (
     <div className="w-full max-w-6xl mx-auto mt-72 px-5 md:px-10 lg:px-16 relative">
-      {/* Title (Absolute for Overlapping Effect) */}
+      {/* Title */}
       <h1
         id="projects"
         className="text-4xl xs:text-[70px] xs:-top-10 sm:text-6xl md:text-7xl lg:text-8xl font-[650] absolute lg:-top-20 z-10"
@@ -22,7 +22,7 @@ const ProjectSection = () => {
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
           <div className="bg-[#E9C3B8] flex text-black justify-center items-center p-6 min-h-[35rem]">
             <Projects
-              img={pickerwheel}
+              img={pw}
               name="Picker Wheel"
               desc="A simple clone of the picker wheel website."
               href1="https://vaibhavxtripathi.github.io/picker-wheel"

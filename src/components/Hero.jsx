@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import SplitText from "./ui/SplitText";
-import me from "../assets/me.png";
+import me from "/assets/me.png";
 
 const Hero = () => {
   return (

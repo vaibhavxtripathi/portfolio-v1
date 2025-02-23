@@ -14,14 +14,14 @@ const Contact = () => {
       </h1>
 
       <div
-        className="p-6 bg-[#0e647a] w-full min-h-[20rem] flex flex-col
-      xs:p-7 xs:pt-7"
+        className="lg:p-10 bg-[#0e647a] w-full min-h-[20rem] flex flex-col
+      xs:p-4 xs:pt-7"
       >
         <div className="flex-1 text-center sm:text-left xs:mt-3 lg:mt-12">
           <h1 className="text-white text-2xl xs:mb-4 xs:text-xl sm:text-xl">
             Contact Me
           </h1>
-          <h1 className="text-white font-semibold text-2xl lg:text-left xs:text-center xs:text-[26px] sm:text-xl lg:text-4xl xs:mt-3 ">
+          <h1 className="text-white font-semibold text-2xl lg:text-left xs:text-center xs:text-[22px] sm:text-xl lg:text-4xl xs:mt-3 ">
             vaibhavxtripathi@email.com
           </h1>
           <hr className="w-[50%] sm:w-[20%] xs:w-[30%] border-[1.5px] lg:mx-0 xs:mx-auto my-4 xs:mt-8 lg:mt-6" />
