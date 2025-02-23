@@ -1,9 +1,7 @@
 import React from "react";
 import Projects from "./helper/Projects";
-import MagneticHover from "./ui/useMagneticHover";
-import weatherapp from "/assets/weather-app.webp";
-import savoney from "/assets/savoney.webp";
-import pw from "/assets/pw.webp";
+
+const MagneticHover = lazy(() => import("./ui/useMagneticHover"));
 
 const ProjectSection = () => {
   return (
