@@ -4,9 +4,7 @@ import MagneticHover from "./ui/useMagneticHover";
 
 const ProjectSection = () => {
   return (
-    <div
-      className="w-full max-w-6xl mx-auto mt-72 px-5 md:px-10 lg:px-16 relative"
-    >
+    <div className="w-full max-w-6xl mx-auto mt-72 px-5 md:px-10 lg:px-16 relative">
       {/* Title (Absolute for Overlapping Effect) */}
       <h1
         id="projects"
@@ -45,7 +43,7 @@ const ProjectSection = () => {
         {/* Second Row */}
 
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
-          <div className="bg-[#1A1A1A] text-white flex justify-center items-center p-6 col-span-1 md:col-span-2 py-24 lg:w-[200%] xs:w-[100%] min-h-[35rem]">
+          <div className="bg-[#1A1A1A] text-white flex justify-center items-center p-6 col-span-1 md:col-span-2 py-18 lg:w-[200%] xs:w-[100%] min-h-[30rem]">
             <Projects
               img="savoney"
               name="Savoney"

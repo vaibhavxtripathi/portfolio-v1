@@ -4,8 +4,8 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 const CursorFollower = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  const smoothX = useSpring(mouseX, { stiffness: 100, damping: 25 });
-  const smoothY = useSpring(mouseY, { stiffness: 100, damping: 25 });
+  const smoothX = useSpring(mouseX, { stiffness: 150, damping: 25 });
+  const smoothY = useSpring(mouseY, { stiffness: 150, damping: 25 });
 
   const [cursorType, setCursorType] = useState("default");
 

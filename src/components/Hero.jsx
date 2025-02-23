@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import SplitText from "./ui/SplitText";
+import me from "../assets/me.png";
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
         </h1>
         <div className="flex flex-col sm:flex-row gap-4 mx-1 mt-6 justify-center sm:justify-start">
           <a
-            href="https://drive.google.com/file/d/1U1tISxQLq54MZiHRXfQBX_pAaH24J9BD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lqI4uCgZ-K1B23fKIHX2d_mJjhOeUHXj/view?usp=sharing"
             target="_blank"
           >
             <Button variant="default" size="lg">
@@ -51,7 +52,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="custom">
               Contact Me
             </Button>
           </a>
@@ -59,10 +60,10 @@ const Hero = () => {
       </div>
       <div className="flex-1 flex justify-center sm:justify-end">
         <img
-          src="https://avatars.githubusercontent.com/u/144479603?s=400&u=90f5b200e86857e9112c50c6786ba7a37c620429&v=4"
+          src={me}
           width={250}
           height={250}
-          className="w-40 xs:w-52 sm:w-52 lg:w-64 h-auto rounded-full"
+          className="w-50 xs:w-60 sm:w-52 lg:w-96 h-auto rounded-full"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { PiShootingStar } from "react-icons/pi";
-
+import img from "../assets/about.png";
 const About = () => {
   return (
     <div
@@ -60,8 +60,8 @@ const About = () => {
         <div className="flex justify-center items-center p-4">
           <img
             id="aboutImg"
-            src="https://avatars.githubusercontent.com/u/144479603?s=400&u=90f5b200e86857e9112c50c6786ba7a37c620429&v=4"
-            className="w-48 h-48 xs:w-56 xs:h-56  sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover shadow-lg"
+            src={img}
+            className="lg:w-72 lg:h-auto lg:-mt-8 xs:w-[300px] xs:h-[300px] s:h-56  sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover"
           />
         </div>
       </div>
