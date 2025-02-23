@@ -1,9 +1,9 @@
 import React from "react";
 import Projects from "./helper/Projects";
 import MagneticHover from "./ui/useMagneticHover";
-import weatherapp from "/assets/weather-app.png";
-import savoney from "/assets/savoney.png";
-import pw from "/assets/pw.png";
+import weatherapp from "/assets/weather-app.webp";
+import savoney from "/assets/savoney.webp";
+import pw from "/assets/pw.webp";
 
 const ProjectSection = () => {
   return (

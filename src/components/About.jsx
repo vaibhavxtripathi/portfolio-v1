@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { PiShootingStar } from "react-icons/pi";
-import img from "/assets/about.png";
+import img from "/assets/about.webp";
 const About = () => {
   return (
     <div
