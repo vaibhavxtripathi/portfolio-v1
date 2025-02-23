@@ -1,21 +1,24 @@
-import React from "react";
 import "./styles/App.css";
 import Hero from "./components/Hero";
-import ProjectSection from "./components/ProjectSection";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import TechStacks from "./components/TechStacks";
 import Navbar from "./components/Navbar";
+import React, { Suspense } from "react";
+
+const ProjectSection = React.lazy(() => import("./components/ProjectSection"));
 
 function App() {
   return (
     <>
-        <Navbar />
-        <Hero />
+      <Navbar />
+      <Hero />
+      <Suspense fallback={<h1>Loading...</h1>}>
         <ProjectSection />
-        <TechStacks />
-        <About />
-        <Contact />
+      </Suspense>
+      <TechStacks />
+      <About />
+      <Contact />
     </>
   );
 }

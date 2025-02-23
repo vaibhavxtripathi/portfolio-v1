@@ -59,7 +59,7 @@ const About = () => {
         {/* Image Section (Moves to Top on Mobile) */}
         <div className="flex justify-center items-center p-4">
           <img
-            id="aboutImg"
+            id="https://vxtr.netlify.app/.netlify/images?url=/assets/about.webp&w=800&q=80"
             src={img}
             className="lg:w-72 lg:h-auto lg:-mt-8 xs:w-[300px] xs:h-[300px] s:h-56  sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover"
           />

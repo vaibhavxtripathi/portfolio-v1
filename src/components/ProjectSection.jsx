@@ -22,7 +22,7 @@ const ProjectSection = () => {
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
           <div className="bg-[#E9C3B8] flex text-black justify-center items-center p-6 min-h-[35rem]">
             <Projects
-              img={pw}
+              img="https://vxtr.netlify.app/.netlify/images?url=/assets/pw.webp&w=800&q=80"
               name="Picker Wheel"
               desc="A simple clone of the picker wheel website."
               href1="https://vaibhavxtripathi.github.io/picker-wheel"
@@ -34,7 +34,7 @@ const ProjectSection = () => {
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
           <div className="bg-[#224A54] text-white flex justify-center items-center p-6 min-h-[35rem]">
             <Projects
-              img={weatherapp}
+              img="https://vxtr.netlify.app/.netlify/images?url=/assets/weather-app.webp&w=800&q=80"
               name="Weather App"
               desc="A simple weather app website using JS."
               href1="https://vaibhavxtripathi.github.io/Weather-App"
@@ -48,7 +48,7 @@ const ProjectSection = () => {
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
           <div className="bg-[#1A1A1A] text-white flex justify-center items-center p-6 col-span-1 md:col-span-2 py-18 lg:w-[200%] xs:w-[100%] min-h-[30rem]">
             <Projects
-              img={savoney}
+              img="https://vxtr.netlify.app/.netlify/images?url=/assets/savoney.webp&w=800&q=80"
               name="Savoney"
               desc="A clone of the Savoney Expense Tracker website."
               href1="https://vaibhavxtripathi.github.io/savoney"
