@@ -27,16 +27,16 @@ const Loading = ({ onLoadingComplete }) => {
           className="loading-screen"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 2}}
+          transition={{ duration: 2 }}
         >
-            <CountUp
-              from={0}
-              to={104}
-              separator=","
-              direction="up"
-              duration={1}
-              className="count-up-text"
-            />
+          <CountUp
+            from={0}
+            to={104}
+            separator=","
+            direction="up"
+            duration={1}
+            className="count-up-text"
+          />
           {showLine && (
             <motion.div
               className="loading-line"
@@ -55,7 +55,7 @@ const Loading = ({ onLoadingComplete }) => {
 
 const CurtainDrop = ({ onComplete }) => {
   const stripCount =
-    window.innerWidth < 600 ? 34 : window.innerWidth < 1024 ? 6 : 12;
+    window.innerWidth < 600 ? 4 : window.innerWidth < 1024 ? 6 : 12;
   const strips = Array.from({ length: stripCount });
 
   useEffect(() => {
@@ -69,13 +69,13 @@ const CurtainDrop = ({ onComplete }) => {
       {strips.map((_, i) => (
         <motion.div
           key={i}
-          className="curtain-strip"
+          className="xs:bg-black"
           initial={{ y: 0, opacity: 1 }}
           animate={{ y: 1000, opacity: 1 }}
           transition={{
-            duration: 0.5,
+            duration: 0.4,
             delay: i * 0.08,
-            ease: "easeInOut",
+            ease: "easeOut",
           }}
           style={{ width: `${100 / stripCount}%` }}
         />

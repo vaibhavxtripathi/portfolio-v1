@@ -51,18 +51,32 @@
   transform-origin: top;
 }
 
-/* Dynamic Strip Widths */
-@media (min-width: 769px) {
-  /* Desktop: More strips */
+@media (max-width: 400px) {
+
   .curtain-strip {
-    width: 8.33%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    transform-origin: top;
+    width: 100vw;
+  }
+  .curtain-strip:nth-child(1) {
+    left: 0%;
+  }
+  .curtain-strip:nth-child(2) {
+    left: 25%;
+  }
+  .curtain-strip:nth-child(3) {
+    left: 75%;
+  }
+  .curtain-strip:nth-child(4) {
+    left: 100%;
   }
 }
-
-@media (min-width: 300px) {
-  /* Mobile: Fewer, wider strips */
+@media (max-width: 700px) {
   .curtain-strip {
-    width: 60%;
+    background:  red; /* Debugging */
   }
 }
 
@@ -116,7 +130,8 @@
   z-index: 1000;
 }
 
-.count-up-text,.loading-text {
+.count-up-text,
+.loading-text {
   color: white;
   font-size: clamp(3rem, 10vw, 4rem);
   text-align: center;
