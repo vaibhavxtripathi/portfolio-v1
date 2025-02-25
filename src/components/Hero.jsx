@@ -60,7 +60,7 @@ const Hero = () => {
       </div>
       <div className="flex-1 flex justify-center sm:justify-end">
         <img
-          src="https://vxtr.netlify.app/.netlify/images?url=/assets/me.webp&w=800&q=80"
+          src={me}
           width={250}
           height={250}
           className="w-50 xs:w-60 sm:w-52 lg:w-96 h-auto rounded-full"
