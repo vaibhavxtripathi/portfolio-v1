@@ -15,7 +15,10 @@ const ProjectSection = () => {
       </h1>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-16">
+      <div
+        data-cursor="contact"
+        className="grid grid-cols-1 md:grid-cols-2 mt-16"
+      >
         {/* First Row */}
         <MagneticHover padding={100} disabled={false} magnetStrength={50}>
           <div className="bg-[#E9C3B8] flex text-black justify-center items-center p-6 min-h-[35rem]">
